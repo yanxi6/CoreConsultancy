@@ -90,38 +90,47 @@ a {
     background: url("../imgs/hero.jpg") no-repeat center;
     font-size: 70px;
     color: white;
+    height: 570px;
     border-bottom: 2px solid var(--border-color); 
+    position: relative;
 }
 
 #hero .text{
-    width: 50%;
-    height: 50%;
+    position:absolute;
+    top:0; 
+    right: 0;
+    width: 49.9%;
+    height: 50.5%;
     background: #50658a;
-    padding: 85px 0;
-    float: right;
+    padding: 60px 60px;
 }
 
-#hero .text span {
+#hero .text .small {
     font-size: 20px;
 }
 /* paragraph */
 
-#paragraph {
+#hero .paragraph {
     background: var(--primary-color);
     font-size: 28px;
     color: var(--font-color);
     padding: 70px 200px;
     width: 80%;
-    margin: auto;
+    position:absolute;
+    left: 10%;
+    top: 450px;
+    height: 500px;
+    overflow: hidden;
 }
 
-#paragraph p {
+#hero .paragraph p {
     line-height: 2.5rem;
+    margin-bottom: 20px; 
 }
 
 /* core service */
 #core-service .container .main-heading {
-    padding-top: 85px;
+    margin-top: 10em; 
     padding-bottom: 140px;
     text-align: center;
 }
@@ -198,6 +207,7 @@ a {
 
 #about .container {
     background: url('../imgs/about_background.jpg') no-repeat center center/cover;
+    padding-bottom: 50px;
 }
 
 #about .about-content {
@@ -259,7 +269,7 @@ a {
 .media-heading {
     font-size: 40px;
     text-align: center;
-    margin: 50px 0;
+    margin-top: 50px;
     color:  #828DAC;
 }
 
@@ -271,18 +281,32 @@ a {
 
 .media .card {
     padding: 60px 150px;
-    border-right: 2px solid var(--border-color);
     border-top: 2px solid var(--border-color);
 }
 
-.media p,
+.media .card:nth-child(1),
+.media .card:nth-child(3) {
+    border-right: 2px solid var(--border-color);
+}
+
+.media h3,
+.media p {
+    line-height: 2.5rem;
+    margin-bottom: 30px;
+}
+
 .media h3 {
-    margin: 1.5rem;
+    font-size: 18px;
+    color: #828DAC;
 }
 
 .media p {
     font-size: 28px;
     color: #465B83;
+}
+
+.media .small {
+    font-size: 18px;
 }
 
 /* connect */
@@ -293,6 +317,19 @@ a {
 
 #connect h1 {
     text-align: center;
+    font-size: 40px;
+    color: #828DAC;
+    margin-bottom: 45px;
+}
+
+#connect h1 span{
+    font-weight: bold; 
+}
+
+#connect .textarea {
+    grid-column-start: 2;
+    grid-row-start: 2; 
+    grid-row-end: 4;
 }
 
 #connect .form-group {
@@ -306,9 +343,40 @@ a {
 }
 
 #connect .form-group .form label{
+    font-size: 18px;
+    color: #828DAC;
     display: block;
+    margin-bottom: 5px;
 }
 
-#connect .form-group .form input{
-    height: 100%;
+#connect .form-group .form textarea,
+#connect .form-group .form input {
+    border: 2px solid var(--border-color);
+    height: 45px;
+}
+
+#connect .form-group .form textarea {
+    height: 150px;
+}
+
+#connect .form-group .form p {
+    padding-top: 15px; 
+    font-size: 25px;
+    color: #828DAC;
+}
+
+#connect .form-group .form p span {
+    margin-right: 25px; 
+}
+
+#connect .form-group .form p .btn {
+    background: #456b83;
+    color: white;
+    padding: 8px;
+    border: 1px solid var(--border-color);
+    margin-right: 0; 
+}
+
+#connect .form-group .form p .bold {
+    font-weight: bold;
 }
