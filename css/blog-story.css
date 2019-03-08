@@ -1,0 +1,45 @@
+#main-blog .container {
+    background: url("../imgs/blog_story_bg.jpg") no-repeat center center/cover;
+    padding-bottom: 1.5rem;
+}
+
+#main-blog .main-blog-content {
+    position: relative;
+    font-size: 18px;
+    padding: 4.5rem 3rem;
+    padding-bottom: 2rem;
+    width: 80%;
+    background: #f5f5f8;
+    margin: auto;
+    color: #465b83;
+    border: 2px solid #c1c4d3;
+    margin-top: -6rem;
+    margin-bottom: 4rem;
+}
+
+#main-blog .main-blog-content h1 {
+    font-size: 41px;
+}
+
+#main-blog .explore_more {
+    font-size: 40px;
+    text-align: center;
+    color: #828dac;
+    font-weight: bold;
+}
+
+#main-blog .main-blog-content p {
+    margin-bottom: 2.5rem;
+}
+
+#common-posts .common-posts-content {
+    width: 100%;
+}
+
+#common-posts .common-posts-content .posts {
+    padding: 4rem 8rem;
+}
+
+#common-posts .common-posts-content .posts h1 {
+    font-weight: 500;
+}

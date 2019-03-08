@@ -1,18 +1,17 @@
 :root {
     --primary-color: #f5f5f8;
     --border-color: #c1c4d3;
-    --font-color: #828DAC;
+    --font-color: #828dac;
 }
-
 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
 }
 
 ul {
@@ -31,6 +30,10 @@ a {
     font-size: 40px;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 /* Utility */
 .container {
     max-width: 1350px;
@@ -38,31 +41,40 @@ a {
 }
 
 /* navbar */
-#navbar {
+#navbar .container {
     display: flex;
-    align-items: center;
     font-size: 18px;
     border-bottom: solid 2px var(--border-color);
     color: var(--font-color);
 }
 
 #navbar .logo,
-#navbar ul {
+#navbar .ul {
+    flex: 1;
     width: 50%;
     padding-top: 70px;
-    padding-bottom: 33px;
+    /* padding-bottom: 33px; */
+}
+
+#navbar .logo p {
+    margin-left: 1rem;
+}
+
+#navbar .ul {
+    height: 100%;
+    background: #f5f5f8;
+    border-left: solid 2px var(--border-color);
 }
 
 #navbar .logo {
-    align-self: flex-start;
-    border-right: solid 2px var(--border-color); 
+    height: 100%;
 }
 
-#navbar .logo .primary{
-    font-weight: bold; 
+#navbar .logo .primary {
+    font-weight: bold;
 }
 
-#navbar .logo .small{
+#navbar .logo .small {
     font-size: 9px;
 }
 
@@ -70,34 +82,34 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    padding-right: 50px; 
-    background: #f5f5f8;
+    padding-right: 50px;
+    padding-bottom: 33px;
 }
 
-#navbar ul :last-child{
-    margin-right: 0px; 
+#navbar ul :last-child {
+    margin-right: 0px;
 }
 
-#navbar ul li{
-    margin-right: 20px; 
+#navbar ul li {
+    margin-right: 20px;
 }
 
 #navbar ul li a {
     color: var(--font-color);
 }
 /* hero */
-#hero {
+#hero .container {
     background: url("../imgs/hero.jpg") no-repeat center;
     font-size: 70px;
     color: white;
-    height: 570px;
-    border-bottom: 2px solid var(--border-color); 
+    height: 35rem;
+    border-bottom: 2px solid var(--border-color);
     position: relative;
 }
 
-#hero .text{
-    position:absolute;
-    top:0; 
+#hero .text {
+    position: absolute;
+    top: 0;
     right: 0;
     width: 49.9%;
     height: 50.5%;
@@ -110,27 +122,25 @@ a {
 }
 /* paragraph */
 
-#hero .paragraph {
+#paragraph .container .paragraph-content {
+    position: relative;
+    margin: auto;
     background: var(--primary-color);
     font-size: 28px;
     color: var(--font-color);
     padding: 70px 200px;
     width: 80%;
-    position:absolute;
-    left: 10%;
-    top: 450px;
-    height: 500px;
-    overflow: hidden;
+    margin-top: -6rem;
 }
 
-#hero .paragraph p {
+#paragraph p {
     line-height: 2.5rem;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
 
 /* core service */
 #core-service .container .main-heading {
-    margin-top: 10em; 
+    margin-top: 1em;
     padding-bottom: 140px;
     text-align: center;
 }
@@ -138,21 +148,18 @@ a {
 #core-service h1 {
     font-size: 40px;
     color: var(--font-color);
-    margin-bottom: 40px;
 }
 
 #core-service h2 {
     font-size: 25px;
-    color: #C1C4D3;
+    color: #c1c4d3;
     margin-bottom: 15px;
 }
 
 #core-service p {
     font-size: 20px;
-    color: #465B83;
+    color: #465b83;
 }
-
-
 
 #core-service .core-service-content {
     display: grid;
@@ -161,22 +168,21 @@ a {
 
 #core-service .step {
     position: relative;
-    border-top: 2px solid var(--border-color); 
+    border-top: 2px solid var(--border-color);
     padding-top: 150px;
     padding-bottom: 140px;
 }
 
 #core-service .step_left {
-    border-right: 2px solid var(--border-color); 
-    padding-left: 270px;
-    padding-right: 90px;
+    border-right: 2px solid var(--border-color);
+    padding-left: 10rem;
+    padding-right: 10rem;
 }
 
 #core-service .step_right {
-    padding-left: 125px;
-    padding-right: 270px;
+    padding-left: 10rem;
+    padding-right: 10rem;
 }
-
 
 #core-service .step-content {
     /* position: absolute; */
@@ -193,25 +199,25 @@ a {
 }
 
 #core-service .icon_left {
-    right: 200px;
+    right: 15rem;
 }
 
 #core-service .icon_right {
-    left: 200px;
+    left: 17rem;
 }
 
 /* about */
 #about {
-    
 }
 
 #about .container {
-    background: url('../imgs/about_background.jpg') no-repeat center center/cover;
+    background: url("../imgs/about_background.jpg") no-repeat center
+        center/cover;
     padding-bottom: 50px;
 }
 
 #about .about-content {
-    color: #465B83;
+    color: #465b83;
     text-align: center;
     border: 2px solid var(--border-color);
     background: #f5f5f8;
@@ -221,7 +227,7 @@ a {
 
 #about h1 {
     font-size: 40px;
-    color: #828DAC;
+    color: #828dac;
 }
 
 #about p {
@@ -244,33 +250,35 @@ a {
     color: white;
 }
 
+#about .about-pic span {
+    display: block;
+}
+
 #about .bg-paul {
-    background: url(../imgs/paul.jpg) no-repeat center center/cover;
+    background: url(../imgs/paul.jpg) no-repeat center;
+    background-size: cover;
 }
 #about .bg-nick {
-    background: url(../imgs/nicholas.jpg) no-repeat center center/cover;
+    background: url(../imgs/nicholas.jpg) no-repeat center;
+    background-size: cover;
 }
 #about .bg-mary {
-    background: url(../imgs/mary.jpg) no-repeat center center/cover;
+    background: url(../imgs/mary.jpg) no-repeat center;
+    background-size: cover;
 }
 
-@media(max-width: 1250px) {
-    #about .bg-mary {
-        display: block;
-    }
-}
-
-#about .about-pic span{
+#about .about-pic span {
     position: absolute;
     top: 25px;
     left: 25px;
+    text-align: left;
 }
 
 .media-heading {
     font-size: 40px;
     text-align: center;
     margin-top: 50px;
-    color:  #828DAC;
+    color: #828dac;
 }
 
 .media .container {
@@ -297,12 +305,12 @@ a {
 
 .media h3 {
     font-size: 18px;
-    color: #828DAC;
+    color: #828dac;
 }
 
 .media p {
     font-size: 28px;
-    color: #465B83;
+    color: #465b83;
 }
 
 .media .small {
@@ -318,33 +326,33 @@ a {
 #connect h1 {
     text-align: center;
     font-size: 40px;
-    color: #828DAC;
+    color: #828dac;
     margin-bottom: 45px;
 }
 
-#connect h1 span{
-    font-weight: bold; 
+#connect h1 span {
+    font-weight: bold;
 }
 
 #connect .textarea {
     grid-column-start: 2;
-    grid-row-start: 2; 
+    grid-row-start: 2;
     grid-row-end: 4;
 }
 
 #connect .form-group {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1.5rem; 
+    grid-gap: 1.5rem;
 }
 
-#connect .form-group .form{
+#connect .form-group .form {
     display: grid;
 }
 
-#connect .form-group .form label{
+#connect .form-group .form label {
     font-size: 18px;
-    color: #828DAC;
+    color: #828dac;
     display: block;
     margin-bottom: 5px;
 }
@@ -360,13 +368,13 @@ a {
 }
 
 #connect .form-group .form p {
-    padding-top: 15px; 
+    padding-top: 15px;
     font-size: 25px;
-    color: #828DAC;
+    color: #828dac;
 }
 
 #connect .form-group .form p span {
-    margin-right: 25px; 
+    margin-right: 25px;
 }
 
 #connect .form-group .form p .btn {
@@ -374,7 +382,7 @@ a {
     color: white;
     padding: 8px;
     border: 1px solid var(--border-color);
-    margin-right: 0; 
+    margin-right: 0;
 }
 
 #connect .form-group .form p .bold {

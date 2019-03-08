@@ -1,0 +1,48 @@
+#hero .text {
+    width: 100%;
+    height: 50.5%;
+}
+
+#core-service .core-service-content {
+    display: block;
+}
+
+#core-service .icon_left,
+#core-service .icon_right {
+    left: 45%;
+}
+
+#core-service .step_left {
+    border-right: 0;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+#about .about-pics {
+    flex-direction: column;
+}
+
+#about .about-pic {
+    width: 70%;
+    margin: auto;
+}
+
+#main-storys .main-storys-content {
+    flex-direction: column;
+}
+
+#common-posts .posts {
+    color: #465b83;
+}
+
+#common-posts .common-posts-content {
+    display: block;
+}
+
+#main-storys .main-storys-content .story:nth-child(2) {
+    border-top: 2px solid #c1c4d3;
+}
+
+#connect .form-group {
+    display: block;
+}
